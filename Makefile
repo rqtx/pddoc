@@ -24,9 +24,8 @@ GOBUILD     ?= CGO_ENABLED=0 GOOS=$(GOOS) GOARCH=$(GOARCH) $(GO) build -ldflags=
 GORUN       ?= GOOS=$(GOOS) GOARCH=$(GOARCH) $(GO) run
 
 # Docker variables
-HUB          := docker.com
 DEFAULT_TAG  ?= $(shell echo "$(CUR_VERSION)" | tr -d 'v')
-DOCKER_IMAGE := $(HUB)/$(PROJECT_OWNER)/$(PROJECT_NAME)
+DOCKER_IMAGE := $(PROJECT_OWNER)/$(PROJECT_NAME)
 DOCKER_TAG   ?= $(DEFAULT_TAG)
 
 # Binary versions
