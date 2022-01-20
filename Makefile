@@ -1,6 +1,6 @@
 # https://github.com/terraform-docs/terraform-docs/blob/master/Makefile
 # Project variables
-PROJECT_NAME  := pdoc
+PROJECT_NAME  := pddoc
 PROJECT_OWNER := rqtx
 DESCRIPTION   := A tool to generate documentation from cloud providers in markdown formats
 PROJECT_URL   := https://github.com/$(PROJECT_OWNER)/$(PROJECT_NAME)
@@ -9,7 +9,7 @@ LICENSE       := MIT
 # Build variables
 BUILD_DIR    := bin
 COMMIT_HASH  ?= $(shell git rev-parse --short HEAD 2>/dev/null)
-CUR_VERSION  ?= $(shell git describe --tags --exact-match 2>/dev/null || git describe --tags 2>/dev/null || echo "v0.0.0-$(COMMIT_HASH)")
+CUR_VERSION  ?= $(shell $(GORUN) main.go version -s)
 COVERAGE_OUT := coverage.out
 
 # Go variables
