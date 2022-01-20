@@ -12,8 +12,8 @@ COPY . .
 RUN make go-build
 
 # generate clean, final image for end users
-FROM amazon/aws-cli:2.4.12
+FROM scratch
 COPY --from=builder /build/pddoc/bin/pddoc /usr/local/bin/
-#COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
 ENTRYPOINT [ "pddoc" ]
