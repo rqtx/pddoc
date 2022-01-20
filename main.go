@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/rqtx/pdoc/cmd"
+	"github.com/rqtx/pddoc/cmd"
 )
 
 func main() {

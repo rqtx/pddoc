@@ -5,8 +5,8 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"github.com/rqtx/pdoc/utils"
-	"github.com/rqtx/pdoc/workers/aws"
+	"github.com/rqtx/pddoc/utils"
+	"github.com/rqtx/pddoc/workers/aws"
 
 	"github.com/spf13/cobra"
 )

@@ -1,9 +1,9 @@
-module github.com/rqtx/pdoc
+module github.com/rqtx/pddoc
 
 go 1.17
 
 require (
-	github.com/aws/aws-sdk-go v1.42.37
+	github.com/aws/aws-sdk-go v1.42.38
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/spf13/cobra v1.3.0
 )

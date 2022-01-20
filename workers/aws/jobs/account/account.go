@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rqtx/pdoc/utils"
+	"github.com/rqtx/pddoc/utils"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"

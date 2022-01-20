@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/rqtx/pdoc/utils"
-	"github.com/rqtx/pdoc/workers/aws/helpers"
+	"github.com/rqtx/pddoc/utils"
+	"github.com/rqtx/pddoc/workers/aws/helpers"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"

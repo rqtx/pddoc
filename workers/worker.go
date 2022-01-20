@@ -1,7 +1,7 @@
 package workers
 
 import (
-	"github.com/rqtx/pdoc/utils"
+	"github.com/rqtx/pddoc/utils"
 )
 
 type Job interface {

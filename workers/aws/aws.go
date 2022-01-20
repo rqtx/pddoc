@@ -1,19 +1,19 @@
 package aws
 
 import (
-	"github.com/rqtx/pdoc/utils"
-	"github.com/rqtx/pdoc/workers"
-	"github.com/rqtx/pdoc/workers/aws/jobs/account"
-	"github.com/rqtx/pdoc/workers/aws/jobs/cloudwatch"
-	"github.com/rqtx/pdoc/workers/aws/jobs/ec2"
-	"github.com/rqtx/pdoc/workers/aws/jobs/ecr"
-	"github.com/rqtx/pdoc/workers/aws/jobs/ecs"
-	"github.com/rqtx/pdoc/workers/aws/jobs/iam"
-	"github.com/rqtx/pdoc/workers/aws/jobs/kms"
-	"github.com/rqtx/pdoc/workers/aws/jobs/lambda"
-	"github.com/rqtx/pdoc/workers/aws/jobs/storage"
-	"github.com/rqtx/pdoc/workers/aws/jobs/vpc"
-	"github.com/rqtx/pdoc/workers/aws/jobs/waf"
+	"github.com/rqtx/pddoc/utils"
+	"github.com/rqtx/pddoc/workers"
+	"github.com/rqtx/pddoc/workers/aws/jobs/account"
+	"github.com/rqtx/pddoc/workers/aws/jobs/cloudwatch"
+	"github.com/rqtx/pddoc/workers/aws/jobs/ec2"
+	"github.com/rqtx/pddoc/workers/aws/jobs/ecr"
+	"github.com/rqtx/pddoc/workers/aws/jobs/ecs"
+	"github.com/rqtx/pddoc/workers/aws/jobs/iam"
+	"github.com/rqtx/pddoc/workers/aws/jobs/kms"
+	"github.com/rqtx/pddoc/workers/aws/jobs/lambda"
+	"github.com/rqtx/pddoc/workers/aws/jobs/storage"
+	"github.com/rqtx/pddoc/workers/aws/jobs/vpc"
+	"github.com/rqtx/pddoc/workers/aws/jobs/waf"
 )
 
 type WorkerAWS struct {
