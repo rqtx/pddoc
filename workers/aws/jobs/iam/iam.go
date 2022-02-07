@@ -78,7 +78,11 @@ func (job *JobIAM) users() utils.Table {
 		for _, group := range listGroups.Groups {
 			plc += *(group.GroupName) + "\n"
 		}
-		temp = append(temp, plc[:len(plc)-1])
+		if len(plc) > 0 {
+			temp = append(temp, plc[:len(plc)-1])
+		} else {
+			temp = append(temp, "")
+		}
 		data = append(data, [][]string{temp}...)
 	}
 	return utils.NewTable([]string{"Users", "Groups"}, data, "Users")
